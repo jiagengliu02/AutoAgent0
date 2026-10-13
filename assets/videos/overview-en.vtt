@@ -1,0 +1,28 @@
+WEBVTT
+
+00:00.000 --> 00:09.000
+The traditional method misses an obstacle and collides.
+Simulation with illustrative interface and trajectories.
+
+00:09.000 --> 00:14.000
+LiDAR detects the obstacle. A VLM RGB check supports keeping it
+in the refined scene context.
+
+00:14.000 --> 00:21.000
+The proposer considers braking, obstacle bypass, and reversing.
+It selects obstacle bypass for verification.
+
+00:21.000 --> 00:35.000
+The runtime searches over forward distance, lateral offset, and speed.
+The shared verifier rejects two candidates and admits the third.
+
+00:35.000 --> 00:43.000
+The executor begins the verified obstacle-bypass maneuver
+while continuing to observe the scene.
+
+00:43.000 --> 00:57.000
+An oncoming vehicle triggers adaptation: return to the original lane earlier.
+The revised maneuver passes verification.
+
+00:57.000 --> 01:03.067
+Continue driving with closed-loop observation and adaptation.

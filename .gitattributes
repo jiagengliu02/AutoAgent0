@@ -1,0 +1,10 @@
+* text=auto
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.vtt text eol=lf
+*.mp4 binary
+*.webp binary
+*.png binary
