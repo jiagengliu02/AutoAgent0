@@ -8,7 +8,7 @@ UCLA · Carnegie Mellon University · UT Dallas · Stanford University
 
 [![Watch the AutoAgent0 overview video](https://jiagengliu02.github.io/AutoAgent0/assets/figures/video-overview.webp?v=film-v02-slide8-fixed)](https://jiagengliu02.github.io/AutoAgent0/assets/videos/overview.mp4?v=film-v02-slide8-fixed)
 
-[? Watch the overview video (2:50)](https://jiagengliu02.github.io/AutoAgent0/assets/videos/overview.mp4?v=film-v02-slide8-fixed)
+[Watch the overview video (2:50)](https://jiagengliu02.github.io/AutoAgent0/assets/videos/overview.mp4?v=film-v02-slide8-fixed)
 
 ## Introduction
 
