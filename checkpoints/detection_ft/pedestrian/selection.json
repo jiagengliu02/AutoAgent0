@@ -1,0 +1,11 @@
+{
+  "refiner_strength": 1.0,
+  "threshold": 0.1,
+  "tracking": false,
+  "bundle_hashes": {
+    "detector.pt": "57f93c2364cdeed90e60a562f72500f3ff6c720d707be429acd039163c1030f0",
+    "refiner.pt": "82f2cbfb823be900a5e46b0272158456955b7a6736f235ca91800f281e17dfc9",
+    "shape_gate.joblib": "9a6cba0fd6e53bc02b62574297fffbb127c5b4ab17635d44fb91830ed8b4dc6e"
+  },
+  "original_checkpoint_sha256": "b523ef1b594c2a4a40eb240e5d0b17dd426775e4dcb332448ac5d8b957fcd09f"
+}

@@ -1,0 +1,10 @@
+{
+  "threshold": 0.35,
+  "nms": 0.3,
+  "merge_policy": "prefer_new",
+  "refiner_strength": 1.0,
+  "bundle_hashes": {
+    "detector.pt": "80c1153258a5f58449730b91f52b3c1f1e15f9976e646deaf0e2346eb3a06987",
+    "refiner.pt": "e2b935f8a23df4dda0b4ea87aa26503b947228fd69bd92d9eec4bec3891fb96a"
+  }
+}
