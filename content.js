@@ -25,14 +25,17 @@ window.AUTOAGENT = {
       { id: 3, name: 'The University of Texas at Dallas', short: 'UT Dallas', url: 'https://www.utdallas.edu/', logo: 'assets/logos/ut-dallas.svg?v=20261014' },
       { id: 4, name: 'Stanford University', short: 'Stanford', url: 'https://www.stanford.edu/', logo: 'assets/logos/stanford.png' }
     ],
-    paper: '',
+    paper: 'https://arxiv.org/abs/2610.18866',
     code: '',
     arxiv: '',
     citation: `@misc{autoagent0,
-  title = {AutoAgent0: An Agentic Runtime for Safe Closed-loop Driving},
+  title = {{AutoAgent0}: An Agentic Runtime for Safe Closed-Loop Driving},
   author = {Liu, Jiageng and Zhao, Seth Z. and Zhou, Zewei and Huerta, Alejandro and Bayer-Calvert, Aidan and Bao, Yuxin and Lin, Haotian and Spataru, Robert and Cui, Zijun and Hong, Yining and Zhou, Bolei and Ma, Jiaqi},
   year = {2026},
-  note = {Preprint}
+  eprint = {2610.18866},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.RO},
+  url = {https://arxiv.org/abs/2610.18866}
 }`
   },
   overview: { src: 'assets/videos/overview.mp4', poster: 'assets/figures/video-overview.webp', title: 'AutoAgent0: from failure to verified recovery', filename: 'overview.mp4', captions: 'assets/videos/overview-en.vtt', posterIsVideoFrame: true },
