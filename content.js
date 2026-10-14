@@ -26,7 +26,7 @@ window.AUTOAGENT = {
       { id: 4, name: 'Stanford University', short: 'Stanford', url: 'https://www.stanford.edu/', logo: 'assets/logos/stanford.png' }
     ],
     paper: 'https://arxiv.org/abs/2610.18866',
-    code: '',
+    code: 'https://github.com/jiagengliu02/AutoAgent0',
     arxiv: '',
     citation: `@misc{autoagent0,
   title = {{AutoAgent0}: An Agentic Runtime for Safe Closed-Loop Driving},
