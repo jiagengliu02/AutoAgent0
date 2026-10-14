@@ -22,7 +22,7 @@ window.AUTOAGENT = {
     affiliations: [
       { id: 1, name: 'University of California, Los Angeles', short: 'UCLA', url: 'https://www.ucla.edu/', logo: 'assets/logos/ucla.svg' },
       { id: 2, name: 'Carnegie Mellon University', short: 'CMU', url: 'https://www.cmu.edu/', logo: 'assets/logos/cmu.svg' },
-      { id: 3, name: 'The University of Texas at Dallas', short: 'UT Dallas', url: 'https://www.utdallas.edu/', logo: 'assets/logos/ut-dallas.svg' },
+      { id: 3, name: 'The University of Texas at Dallas', short: 'UT Dallas', url: 'https://www.utdallas.edu/', logo: 'assets/logos/ut-dallas.svg?v=20261014' },
       { id: 4, name: 'Stanford University', short: 'Stanford', url: 'https://www.stanford.edu/', logo: 'assets/logos/stanford.png' }
     ],
     paper: '',
