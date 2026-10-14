@@ -38,7 +38,7 @@ window.AUTOAGENT = {
   url = {https://arxiv.org/abs/2610.18866}
 }`
   },
-  overview: { src: 'assets/videos/overview.mp4', poster: 'assets/figures/video-overview.webp', title: 'AutoAgent0: from failure to verified recovery', filename: 'overview.mp4', captions: 'assets/videos/overview-en.vtt', posterIsVideoFrame: true },
+  overview: { src: 'assets/videos/overview.mp4?v=film-v02-slide8-fixed', poster: 'assets/figures/video-overview.webp?v=film-v02-slide8-fixed', title: 'AutoAgent0: An Agentic Runtime for Safe Closed-Loop Driving', filename: 'overview.mp4', posterIsVideoFrame: true },
   scenarios: [
     {"id": "construction-permutations", "label": "Construction variants", "title": "Adapting to unfamiliar construction layouts", "videos": {"fail1": {"src": "assets/videos/demonstrations/construction_variants_fail1.mp4", "poster": "assets/figures/demonstrations/construction_variants_fail1.png", "posterIsVideoFrame": true, "preload": "none"}, "fail2": {"src": "assets/videos/demonstrations/construction_variants_fail2.mp4", "poster": "assets/figures/demonstrations/construction_variants_fail2.png", "posterIsVideoFrame": true, "preload": "none"}, "success": {"src": "assets/videos/demonstrations/construction_variants_success.mp4", "poster": "assets/figures/demonstrations/construction_variants_success.png", "posterIsVideoFrame": true, "preload": "none"}}},
     {"id": "bad-parking", "label": "Bad parking", "title": "Navigating around improperly parked vehicles", "videos": {"fail1": {"src": "assets/videos/demonstrations/bad_parking_fail1.mp4", "poster": "assets/figures/demonstrations/bad_parking_fail1.png", "posterIsVideoFrame": true, "preload": "none"}, "fail2": {"src": "assets/videos/demonstrations/bad_parking_fail2.mp4", "poster": "assets/figures/demonstrations/bad_parking_fail2.png", "posterIsVideoFrame": true, "preload": "none"}, "success": {"src": "assets/videos/demonstrations/bad_parking_success.mp4", "poster": "assets/figures/demonstrations/bad_parking_success.png", "posterIsVideoFrame": true, "preload": "none"}}},
@@ -56,9 +56,9 @@ window.AUTOAGENT = {
     ] }
   ],
   methodVideos: [
-    { id: 'perception', title: 'Scene context refinement', detail: 'Camera + LiDAR + semantic validation. Excerpt from the overview.', src: 'assets/videos/scene-refinement.mp4', poster: 'assets/figures/video-perception.webp', filename: 'scene-refinement.mp4', posterIsVideoFrame: true },
-    { id: 'recovery', title: 'Verifier-guided recovery', detail: 'Select → parameterize → verify. Excerpt from the overview.', src: 'assets/videos/recovery-planning.mp4', poster: 'assets/figures/video-recovery.webp', filename: 'recovery-planning.mp4', posterIsVideoFrame: true },
-    { id: 'adaptation', title: 'Closed-loop adaptation', detail: 'Observe, revise, and verify again. Excerpt from the overview.', src: 'assets/videos/closed-loop-adaptation.mp4', poster: 'assets/figures/video-adaptation.webp', filename: 'closed-loop-adaptation.mp4', posterIsVideoFrame: true }
+    { id: 'perception', title: 'Scene context refinement', detail: 'Camera + LiDAR + semantic validation. Runtime demonstration.', src: 'assets/videos/scene-refinement.mp4', poster: 'assets/figures/video-perception.webp', filename: 'scene-refinement.mp4', posterIsVideoFrame: true },
+    { id: 'recovery', title: 'Verifier-guided recovery', detail: 'Select → parameterize → verify. Runtime demonstration.', src: 'assets/videos/recovery-planning.mp4', poster: 'assets/figures/video-recovery.webp', filename: 'recovery-planning.mp4', posterIsVideoFrame: true },
+    { id: 'adaptation', title: 'Closed-loop adaptation', detail: 'Observe, revise, and verify again. Runtime demonstration.', src: 'assets/videos/closed-loop-adaptation.mp4', poster: 'assets/figures/video-adaptation.webp', filename: 'closed-loop-adaptation.mp4', posterIsVideoFrame: true }
   ],
   // Metrics in each split: driving score, success rate (%), harmonic mean.
   results: [
