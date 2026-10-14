@@ -6,18 +6,18 @@
 window.AUTOAGENT = {
   project: {
     authors: [
-      { name: 'Jiageng Liu', affiliations: [1] },
-      { name: 'Seth Z. Zhao', affiliations: [1], email: 'sethzhao506@g.ucla.edu', corresponding: true },
-      { name: 'Zewei Zhou', affiliations: [1], email: 'zeweizhou@ucla.edu', corresponding: true },
-      { name: 'Alejandro Huerta', affiliations: [1] },
-      { name: 'Aidan Bayer-Calvert', affiliations: [1] },
-      { name: 'Yuxin Bao', affiliations: [1] },
-      { name: 'Haotian Lin', affiliations: [2] },
-      { name: 'Robert Spataru', affiliations: [1] },
-      { name: 'Zijun Cui', affiliations: [3] },
-      { name: 'Yining Hong', affiliations: [4] },
-      { name: 'Bolei Zhou', affiliations: [1] },
-      { name: 'Jiaqi Ma', affiliations: [1] }
+      { name: 'Jiageng Liu', affiliations: [1], url: 'https://jiagengliu02.github.io/' },
+      { name: 'Seth Z. Zhao', affiliations: [1], email: 'sethzhao506@g.ucla.edu', corresponding: true, url: 'https://sethzhao506.github.io/' },
+      { name: 'Zewei Zhou', affiliations: [1], email: 'zeweizhou@ucla.edu', corresponding: true, url: 'https://zewei-zhou.github.io/' },
+      { name: 'Alejandro Huerta', affiliations: [1], url: 'https://www.linkedin.com/in/alejandro-huerta42/' },
+      { name: 'Aidan Bayer-Calvert', affiliations: [1], url: 'https://www.linkedin.com/in/aidan-bayer-calvert/' },
+      { name: 'Yuxin Bao', affiliations: [1], url: 'https://www.linkedin.com/in/rebecca-bao-c13752hz/' },
+      { name: 'Haotian Lin', affiliations: [2], url: 'https://darthutopian.github.io/' },
+      { name: 'Robert Spataru', affiliations: [1], url: 'https://www.linkedin.com/in/robert-spataru/' },
+      { name: 'Zijun Cui', affiliations: [3], url: 'https://zijuncui.com/' },
+      { name: 'Yining Hong', affiliations: [4], url: 'https://evelinehong.github.io/' },
+      { name: 'Bolei Zhou', affiliations: [1], url: 'https://boleizhou.github.io/' },
+      { name: 'Jiaqi Ma', affiliations: [1], url: 'https://mobility-lab.seas.ucla.edu/about/' }
     ],
     affiliations: [
       { id: 1, name: 'University of California, Los Angeles', short: 'UCLA', url: 'https://www.ucla.edu/', logo: 'assets/logos/ucla.svg' },

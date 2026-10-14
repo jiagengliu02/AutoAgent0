@@ -62,7 +62,8 @@
 
   $('#authors').innerHTML = data.project.authors.map(author => {
     const name = escapeHTML(author.name);
-    const label = author.email ? `<a href="mailto:${escapeHTML(author.email)}">${name}</a>` : name;
+    const url = safeURL(author.url);
+    const label = url ? `<a href="${escapeHTML(url)}" target="_blank" rel="noopener">${name}</a>` : name;
     return `<span class="author">${label}<sup>${author.affiliations.join(',')}${author.corresponding ? ',*' : ''}</sup></span>`;
   }).join('');
   $('#affiliations').innerHTML = data.project.affiliations.map(affiliation =>
