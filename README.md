@@ -6,6 +6,10 @@ UCLA · Carnegie Mellon University · UT Dallas · Stanford University
 
 [Paper](https://arxiv.org/abs/2610.18866) | [Project Page](https://jiagengliu02.github.io/AutoAgent0/) | [Quick Start](docs/quickstart.md)
 
+[![Watch the AutoAgent0 overview video](https://jiagengliu02.github.io/AutoAgent0/assets/figures/video-overview.webp?v=film-v02-slide8-fixed)](https://jiagengliu02.github.io/AutoAgent0/assets/videos/overview.mp4?v=film-v02-slide8-fixed)
+
+[? Watch the overview video (2:50)](https://jiagengliu02.github.io/AutoAgent0/assets/videos/overview.mp4?v=film-v02-slide8-fixed)
+
 ## Introduction
 
 **AutoAgent0** is an agentic runtime for safe closed-loop driving. It augments frozen driving experts with independent scene assessment, trajectory verification, and feedback-driven recovery.
