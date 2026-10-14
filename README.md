@@ -1,74 +1,48 @@
-# AutoAgent0
+# AutoAgent0: An Agentic Runtime for Safe Closed-Loop Driving
 
-SparseDriveV2 planning + BridgeDrive detection_ft + Claude Opus 5.
+Jiageng Liu, Seth Z. Zhao, Zewei Zhou, Alejandro Huerta, Aidan Bayer-Calvert, Yuxin Bao, Haotian Lin, Robert Spataru, Zijun Cui, Yining Hong, Bolei Zhou, Jiaqi Ma
 
-## Setup
+UCLA · Carnegie Mellon University · UT Dallas · Stanford University
 
-```bash
-git lfs install
-git clone https://github.com/jiagengliu02/AutoAgent0.git
-cd AutoAgent0
-git lfs pull
+[Paper](https://arxiv.org/abs/2610.18866) | [Project Page](https://jiagengliu02.github.io/AutoAgent0/) | [Quick Start](docs/quickstart.md)
+
+## Introduction
+
+**AutoAgent0** is an agentic runtime for safe closed-loop driving. It augments frozen driving experts with independent scene assessment, trajectory verification, and feedback-driven recovery.
+
+- **Scene context refinement** combines complementary perception skills to identify safety-critical actors and refine the context used for verification.
+- **Rule-based verification** checks nominal and recovery trajectories before execution.
+- **Recovery planning** constructs alternative maneuvers from action primitives and iteratively refines them using verifier feedback when nominal execution becomes unreliable.
+
+![AutoAgent0 runtime overview](docs/assets/overview.png)
+
+## Results
+
+**Fail2Drive.** Driving score (DS) and success rate (SR), averaged over three runs.
+
+| Method | In-distribution DS ↑ | Generalization DS ↑ | Average DS ↑ | Average SR (%) ↑ |
+| --- | ---: | ---: | ---: | ---: |
+| UniAD | 47.5 | 44.0 | 45.8 | 32.0 |
+| + AutoAgent0 | **68.4** | **69.2** | **68.8** | **69.0** |
+| SparseDriveV2 | 70.0 | 62.9 | 66.5 | 63.4 |
+| + AutoAgent0 | **80.7** | **79.2** | **80.0** | **83.4** |
+| BridgeDrive | 91.6 | 81.9 | 86.8 | 85.0 |
+| + AutoAgent0 | **91.7** | **85.7** | **88.7** | **90.3** |
+
+## Quick Start
+
+[Installation and evaluation](docs/quickstart.md)
+
+## Citation
+
+```bibtex
+@misc{autoagent0,
+  title = {{AutoAgent0}: An Agentic Runtime for Safe Closed-Loop Driving},
+  author = {Liu, Jiageng and Zhao, Seth Z. and Zhou, Zewei and Huerta, Alejandro and Bayer-Calvert, Aidan and Bao, Yuxin and Lin, Haotian and Spataru, Robert and Cui, Zijun and Hong, Yining and Zhou, Bolei and Ma, Jiaqi},
+  year = {2026},
+  eprint = {2610.18866},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.RO},
+  url = {https://arxiv.org/abs/2610.18866}
+}
 ```
-
-CARLA 0.9.15, Fail2Drive (`start_carla.sh`, `fail2drive_split/`), CUDA 11.8, FFmpeg, and Vulkan tools.
-
-| Environment | Dependencies |
-| --- | --- |
-| Evaluator | Python 3.10, Fail2Drive, OmegaConf, PyYAML, NumPy, SciPy, Shapely, OpenCV, Pillow, imageio, imageio-ffmpeg |
-| SparseDriveV2 | Python 3.8, PyTorch 2.0.1+cu118, [requirements](third_party/SparseDriveV2/requirement.txt) |
-| BridgeDrive | Python 3.10, PyTorch 2.5.0, torchvision 0.20.0, [requirements](third_party/LEAD/requirements.txt), scikit-learn 1.7.0, joblib 1.5.1 |
-
-```bash
-export FAIL2DRIVE_ROOT=/path/to/fail2drive
-export CARLA_ROOT=/path/to/carla
-export EVALUATOR_PYTHON_BIN=/path/to/fail2drive-env/bin/python
-export SPARSEDRIVEV2_PYTHON_BIN=/path/to/sparsedrivev2-env/bin/python
-export BRIDGEDRIVE_PYTHON_BIN=/path/to/lead-env/bin/python
-export CUDA_HOME=/path/to/cuda-11.8
-
-(
-  cd third_party/SparseDriveV2/projects/mmdet3d_plugin/ops
-  FORCE_CUDA=1 "$SPARSEDRIVEV2_PYTHON_BIN" setup.py build_ext --inplace
-)
-```
-
-## Checkpoints
-
-| Model | Path |
-| --- | --- |
-| SparseDriveV2 | `checkpoints/sparsedrivev2/sparsedrive_small_b2d_stage2.pth` |
-| BridgeDrive | `checkpoints/bridgedrive/model_BridgeDrive_m2_k60_0030.pth` |
-| Pedestrian detection_ft | `checkpoints/detection_ft/pedestrian/` |
-| Static detection_ft | `checkpoints/detection_ft/static/` |
-
-```bash
-sha256sum -c checkpoints/SHA256SUMS
-```
-
-## Evaluation
-
-Configuration: [configs/pipeline.yaml](configs/pipeline.yaml). Routes: [200 episodes](configs/episodes/claude_opus5_full200.json). API model: `claude-opus-5`.
-
-```bash
-read -r -s -p 'Anthropic API key: ' ANTHROPIC_API_KEY
-export ANTHROPIC_API_KEY
-
-bash scripts/run.sh --dry-run
-
-# Single route.
-GPUS_SMI="0" MAX_ROUTES=1 bash scripts/run.sh
-
-# All routes, one CARLA instance per GPU.
-GPUS_SMI="0 1" bash scripts/run.sh
-```
-
-| Option | Default |
-| --- | --- |
-| `GPUS_SMI` | `0` (nvidia-smi indices) |
-| `MAX_ROUTES` | `0` (all) |
-| `OUT_DIR` | `output/run_<timestamp>/` (new directory) |
-| `BASE_PORT` / `TM_BASE` | `5600` / `5700` |
-| `AGENTICDRIVING_SIM_TIME_LIMIT_SEC` | `180` (diagnostic cutoff; `0` for full routes) |
-
-Results: `res/`. Predictions, videos, and VLM records: `episodes/`. Logs: `logs/`.

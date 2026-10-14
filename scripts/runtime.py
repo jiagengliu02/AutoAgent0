@@ -55,7 +55,7 @@ def check_runtime(cfg, root):
             if result.returncode:
                 detail = result.stderr.strip()
                 if label == "SparseDriveV2" and "deformable_aggregation" in detail:
-                    detail = "Build the SparseDriveV2 CUDA extensions (README Setup).\n" + detail
+                    detail = "Build the SparseDriveV2 CUDA extensions (docs/quickstart.md).\n" + detail
                 failures.append(f"{label}:\n{detail}")
         except (OSError, subprocess.TimeoutExpired) as exc:
             failures.append(f"{label}: {exc}")
