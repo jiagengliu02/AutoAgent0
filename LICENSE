@@ -1,0 +1,56 @@
+AutoAgent0 Academic Research License
+Version 1.0, October 17, 2026
+Copyright (c) 2026 the respective copyright holders of AutoAgent0.
+All rights not expressly granted below are reserved.
+
+1. Scope
+This License covers original AutoAgent0 code, scripts, configuration files,
+and textual documentation (the "Software"). Each rights holder grants only
+rights it owns or is authorized to license. Third-party and separately licensed
+materials, weights, checkpoints, datasets, anchor arrays, images, videos, fonts,
+and logos are excluded unless expressly included by their rights holders.
+No patent, trademark, or endorsement rights are granted.
+
+2. Academic permission
+Educational institutions, nonprofit research organizations, and individuals
+conducting academic research or education may use, copy, run, and modify the
+Software worldwide, nonexclusively and without royalties, solely for
+noncommercial academic research or education. Retain this License and existing
+notices, and identify modifications. Salaries, tuition, and grants alone do not
+make research commercial; industry-funded research qualifies only if independent,
+its results may be published, and it is not for a sponsor's product development
+or evaluation. You retain rights in your own original modifications. You may
+publish research results that do not reproduce or constitute derivative works
+of the Software.
+
+3. No redistribution
+Without prior written permission from the relevant rights holders, you may not
+share, distribute, publish, publicly display, sublicense, sell, or transfer the
+Software or modified versions to another person or entity, in whole or in part,
+in source or compiled form, even for free academic collaboration or teaching.
+Direct other users to the official repository. This restriction does not override
+rights independently granted by third-party licenses, applicable law, or hosting
+platform terms, including viewing and forking rights on GitHub.
+
+4. Separate authorization
+Commercial activities, including product development, commercial model training,
+consulting, business operations, and use by or on behalf of for-profit entities,
+require a separate written license from the relevant rights holders, subject to
+the independent academic research provision above. Contact the maintainers at
+https://github.com/jiagengliu02/AutoAgent0 to route licensing requests.
+
+5. Termination
+Permissions terminate upon material breach; stop activities requiring them.
+One automatic reinstatement is allowed if fully cured within 30 days of discovery;
+otherwise written reinstatement is required. Termination does not invalidate prior
+compliant use or other users' independent permissions. Claims for the breach and
+the ownership provisions, exclusions, and disclaimers survive termination.
+
+6. Disclaimer
+TO THE EXTENT PERMITTED BY LAW, THE SOFTWARE IS PROVIDED WITHOUT WARRANTIES OF
+ANY KIND, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE,
+NON-INFRINGEMENT, ACCURACY, OR SAFETY. NO SUPPORT OR UPDATES ARE OWED. RIGHTS
+HOLDERS AND CONTRIBUTORS ARE NOT LIABLE FOR DAMAGES ARISING FROM THE SOFTWARE
+OR THIS LICENSE, WHETHER DIRECT, INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL,
+EVEN IF ADVISED OF THEIR POSSIBILITY. LIABILITY THAT CANNOT LAWFULLY BE EXCLUDED
+IS UNAFFECTED. THIS LICENSE PROVIDES NO CERTIFICATION FOR REAL-VEHICLE OPERATION.
